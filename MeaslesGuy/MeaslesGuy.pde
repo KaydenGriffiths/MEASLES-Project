@@ -14,10 +14,11 @@ void draw() {
   //OS System Start Button
   //Splash Screen level start button | Measles reset button
   //Theme: measles with different sizes and colors
-  rect(appWidth/4 , appHeight*0, appWidth/2, appHeight);
   //
-  stroke(40);
-  circle(appWidth/2, appHeight/2, 220);
+  rect(appWidth/8 , appHeight*0, appWidth * 3/4, appHeight);
+  //
+  stroke(1);
+  circle(appWidth/2, appHeight/2, 600);
 }//End draw
 //
 void keyPressed() {
