@@ -6,7 +6,8 @@ Boolean nightMode=false;
 //
 void setup() {
   //Display & Orientation
-  size(600, 400); 
+  //size(800, 600); 
+  fullScreen();
   displayOrientation();
   appWidth = width;
   appHeight = height;
@@ -25,6 +26,8 @@ void draw() {
   eyes(); //Student created
   mouth(); //Student created
   nose(); //Student created
+  startButton();
+  quitButton();
 }//End draw
 //
 void keyPressed() {
