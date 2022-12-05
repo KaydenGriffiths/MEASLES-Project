@@ -1,8 +1,6 @@
 void population() {
   float centerX = appWidth*1/2;
   float centerY = appHeight*1/2;
-  float quitX, quitY, quitWidth, quitHeight, textX, textY, textWidth, textHeight;
-  float quitX, startytarth, startHeight
   //
   int smallerDimension;
   smallerDimension = ( landscape == true) ? appHeight : appWidth;
@@ -35,12 +33,19 @@ void population() {
   xNose3 = faceX + leftEyeY*1/2;
   yNose3 = faceY ;
   //
-  textFont = createFont("Arial", 55);
+  textFont = createFont("Arial", 55); 
   textWidth = appWidth*1/12;
   textHeight = appHeight*1/20;
-  //
+  //appWidth/16, appHeight/4, appWidth/3, appHeight/10
   startX=appWidth/16;
-  
+  startY=appHeight/4;
+  startWidth=appWidth/3;
+  startHeight=appHeight/10;
+  //quit
+  quitX=appWidth/16;
+  quitY=appHeight/2;
+  quitWidth=appWidth/3;
+  quitHeight=appHeight/10;
 } //End Population
 //
 // End Population Subprogram

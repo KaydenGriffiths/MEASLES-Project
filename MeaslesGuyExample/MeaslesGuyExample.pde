@@ -3,6 +3,13 @@ int appWidth, appHeight;
 int reset=1;
 color resetWhite=#FFFFFF;
 Boolean nightMode=false;
+Boolean text=false;
+String exitText="Exit", startText="Start";
+color red=#FF0000, green=#00FF00, white=#000000;
+PFont textFont;
+int fontSize;
+float quitX, quitY, quitWidth, quitHeight, textX, textY, textWidth, textHeight;
+float startX, startY, startWidth, startHeight;
 //
 void setup() {
   //Display & Orientation
@@ -28,6 +35,9 @@ void draw() {
   nose(); //Student created
   startButton();
   quitButton();
+  startTextbox();
+  exitTextbox();
+  hoverOver();
 }//End draw
 //
 void keyPressed() {
