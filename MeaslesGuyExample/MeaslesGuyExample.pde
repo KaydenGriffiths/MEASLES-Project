@@ -21,7 +21,7 @@ void draw() {
   //OS System Button
   //Start Button | Measles Reset Button
   //Theme: face & measles with different sizes and colours
-  measlesDynamic(); //Teacher Lesson
+  measles(); //Teacher Lesson
   eyes(); //Student created
   mouth(); //Student created
   nose(); //Student created
