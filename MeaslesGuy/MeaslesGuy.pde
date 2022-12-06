@@ -1,24 +1,28 @@
 //Global Variables
 int appWidth, appHeight;
+int reset=1;
+color black=#000000;
+Boolean nightMode=false;
 //
 void setup() {
   //Size
+  fullScreen();
+   background(black);
+  //size(1920, 1080);
   displayOrientation();
-  size(800, 600);
-  frameRate(9000);
-  //Theme: i.e Face
+  population();
+  faceSetup();
   //Back Image with tint()
 }//End Setup
 //
 void draw() {
+
   //OS System Start Button
   //Splash Screen level start button | Measles reset button
   //Theme: measles with different sizes and colors
-  //
-  rect(appWidth/8 , appHeight*0, appWidth * 3/4, appHeight);
-  //
-  stroke(1);
-  circle(appWidth/2, appHeight/2, 600);
+ 
+  
+  measles();
 }//End draw
 //
 void keyPressed() {
