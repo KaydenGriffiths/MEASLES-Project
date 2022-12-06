@@ -39,12 +39,12 @@ void population() {
   //appWidth/16, appHeight/4, appWidth/3, appHeight/10
   startX=appWidth/16;
   startY=appHeight/4;
-  startWidth=appWidth/3;
+  startWidth=appWidth/4;
   startHeight=appHeight/10;
   //quit
   quitX=appWidth/16;
   quitY=appHeight/2;
-  quitWidth=appWidth/3;
+  quitWidth=appWidth/4;
   quitHeight=appHeight/10;
 } //End Population
 //

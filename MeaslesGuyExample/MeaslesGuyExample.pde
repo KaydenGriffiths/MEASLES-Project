@@ -14,6 +14,7 @@ float startX, startY, startWidth, startHeight;
 void setup() {
   //Display & Orientation
   //size(800, 600); 
+  background(#000000);
   fullScreen();
   displayOrientation();
   appWidth = width;
@@ -23,6 +24,7 @@ void setup() {
   //Theme: i.e. Face (will work in portrait and landscape)
   faceSetup(); //Teacher Lesson
   //Background Image (could be in draw too)
+  
 }//End setup
 //
 void draw() {
