@@ -34,5 +34,19 @@ void population () {
   yNose2 = faceY ;
   xNose3 = faceX + leftEyeY*1/2;
   yNose3 = faceY ;
+  //appWidth/16, appHeight/4, appWidth/3, appHeight/10
+  startX=appWidth/16  ;
+  startY= appHeight/4 ;
+  startWidth= appWidth/3  ;
+  startHeight= appHeight/10 ;
   //
+  quitX= appWidth/16 ;
+  quitY= appHeight/2 ; 
+  quitWidth= appWidth/3 ;
+  quitHeight= appHeight/10 ;
+  //
+  resetX= appWidth/16 ;
+  resetY= appHeight * 3/4 ;
+  resetWidth= appWidth/3 ;
+  resetHeight= appHeight/10 ;
 }//End population
