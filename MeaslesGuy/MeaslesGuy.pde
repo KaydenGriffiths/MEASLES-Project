@@ -7,7 +7,7 @@ Boolean nightMode=false;
 void setup() {
   //Size
   fullScreen();
-   background(black);
+  background(black);
   //size(1920, 1080);
   displayOrientation();
   population();
@@ -20,9 +20,13 @@ void draw() {
   //OS System Start Button
   //Splash Screen level start button | Measles reset button
   //Theme: measles with different sizes and colors
- 
-  
-  measles();
+  measles(); //Teacher Lesson
+  eyes(); //Student created
+  mouth(); //Student created
+  nose(); //Student created
+  startButton();
+  quitButton();
+  resetButton();
 }//End draw
 //
 void keyPressed() {
