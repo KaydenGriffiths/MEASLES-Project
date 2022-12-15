@@ -1,24 +1,31 @@
+
 void displayOrientation() {
-  //CAUTION: if landscape is false, then portrait must be true
   appWidth = width;
   appHeight = height;
-  //
-  //Concatenation , -or- +
+
   println("\t\t\tWidth="+width, "\tHeight="+height);
   println("Display Monitor:", "\twidth:"+displayWidth, "height:"+displayHeight);
   //
-  String ls="landscapes or Square", p="potrait", DO="Display Orientation", instruct ="Breh, turn your phon";
+  String ls="landscapes or Square", p="Potrait", DO="Display Orientation is:", instruct ="Breh, turn your phon";
   //
-  if ( appWidth >= appHeight ) { //Declaring Landscape & Square 
-    println(instruct);
-  } else {
+  if ( appWidth >= appHeight && appWidth < displayWidth) { //Declaring Landscape & Square 
     println("Display: Good to Go");
-    if ( appWidth > displayWidth ) { //Fitting CANVAS into Monitor display} else {
-      appWidth=0;
-      appHeight=0;
-      println("STOP, is broken");
-    } else {
-      //Empty ELSE
+    println(DO, ls);
+    smallerDimension= appHeight;
+    largerDimension= appWidth;
+    //
+    println("Smaller Dimension is:", smallerDimension, "Larger Dimension is:", largerDimension);
+  } else {
+    if (appWidth < displayWidth) {
+      println(DO, p);
+      println(instruct);
     }
+  }
+  //
+  if ( appWidth > displayWidth ) {
+    appWidth=0;
+    appHeight=0;
+    println("STOP, is broken");
+  } else {
   }
 }//End displayOrientation
