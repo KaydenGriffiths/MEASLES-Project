@@ -1,4 +1,3 @@
-
 void displayOrientation() {
   appWidth = width;
   appHeight = height;
